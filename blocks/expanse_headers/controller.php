@@ -16,6 +16,8 @@ class Controller extends BlockController {
   protected $btCacheBlockOutputForRegisteredUsers = false;
   protected $btDefaultSet = 'multimedia';
 
+  public $header = "";
+
   public function getBlockTypeName()
   {
     return t("Expanse Header Builder");
@@ -26,7 +28,10 @@ class Controller extends BlockController {
     return t("Allows users to customise the header design");
   }
 
+  public function view()
+  {
+    $this->set('header', $this->header);
+  }
+
 }
-
-
 ?>

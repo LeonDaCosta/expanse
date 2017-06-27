@@ -54,10 +54,10 @@
 								<li class="dropdown">
 			  					<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Services <span class="caret"></span></a>
 			  					<ul class="dropdown-menu">
-										<li><a href="">Services1</a></li>
-										<li><a href="">Services2</a></li>
-										<li><a href="">Services3</a></li>
-										<li><a href="">Icons</a></li>
+										<li><a href="/">Services1</a></li>
+										<li><a href="/">Services2</a></li>
+										<li><a href="/">Services3</a></li>
+										<li><a href="/">Icons</a></li>
 			  					</ul>
 								</li>
 			 					<li><a href="">Gallery</a></li>

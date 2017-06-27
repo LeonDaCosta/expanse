@@ -1,5 +1,5 @@
 <?php
-namespace Concrete\Package\Zone\Theme\Zone;
+namespace Concrete\Package\Expanse\Theme\Expanse;
 
 class PageTheme extends \Concrete\Core\Page\Theme\Theme
 {
@@ -7,9 +7,9 @@ class PageTheme extends \Concrete\Core\Page\Theme\Theme
 
     public function registerAssets()
     {
-      //$this->requireAsset('css', 'font-awesome');
-      //$this->requireAsset('javascript', 'jquery');
-      //$this->requireAsset('css', 'bootstrap');
+        //$this->requireAsset('css', 'font-awesome');
+        //$this->requireAsset('javascript', 'jquery');
+        //$this->requireAsset('css', 'bootstrap');
         //$this->providesAsset('javascript', 'bootstrap/*');
         //$this->providesAsset('css', 'bootstrap/*');
         //$this->providesAsset('css', 'blocks/form');
@@ -34,11 +34,11 @@ class PageTheme extends \Concrete\Core\Page\Theme\Theme
 
     public function getThemeName()
     {
-        return t('Zone  Theme');
+        return t('Expanse Theme');
     }
 
     public function getThemeDescription()
     {
-        return t('A magazine style theme design for content driven websites.');
+        return t('A simple theme that give you the power to fully customise your C5 site.');
     }
 }

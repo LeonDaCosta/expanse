@@ -27,7 +27,7 @@ class Controller extends Package
 	 */
 	public function getPackageDescription()
 	{
-    	return t("A simple theme based on the Bootstrap framework.");
+    	return t("A simple page builder that give you the power to customise your C5 site.");
 	}
 
 	/**

@@ -1,2 +1,2 @@
-Reel Magazine Theme
-A magazine style theme design for content driven websites.
+Expanse Theme
+A simple theme that give you the power to fully customise your C5 site.

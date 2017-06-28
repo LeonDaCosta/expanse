@@ -1,8 +1,4 @@
-/*Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
---*/
+@import "presets/defaults.less";
 
 body {
     background: #fff;
@@ -43,7 +39,7 @@ p {
 /*--agile--*/
 
 .header {
-    background: url(../images/1.jpg) no-repeat right;
+    background: url(@header-background-image) no-repeat right;
     width: 100%;
     background-size: cover;
     min-height: 750px;
@@ -113,7 +109,7 @@ p {
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
     color: #FFF;
-    background: #ff6900;
+    background: @primary-color;
 }
 
 .navbar-default .navbar-nav>li>a {
@@ -124,7 +120,7 @@ p {
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus {
     color: #FFFFFF;
-    background-color: #ff6900;
+    background-color: @primary-color;
     outline: none;
 }
 
@@ -132,12 +128,12 @@ p {
 .navbar-default .navbar-nav>.open>a:hover,
 .navbar-default .navbar-nav>.open>a:focus {
     color: #FFF;
-    background-color: #ff6900;
+    background-color: @primary-color;
 }
 
 .dropdown-menu {
     border: none;
-    background-color: #ff6900;
+    background-color: @primary-color;
     padding: 0px 0;
     border-radius: 0px;
 }
@@ -235,7 +231,7 @@ p {
 }
 
 .sb-search-submit {
-    background: #ff6900 url('../images/search.png') no-repeat 0px 1px;
+    background: @primary-color url('../images/search.png') no-repeat 0px 1px;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     /* IE 8 */
     filter: alpha(opacity=0);
@@ -249,7 +245,7 @@ p {
 
 .sb-icon-search {
     color: #FFF;
-    background: #ff6900 url('../images/search.png') no-repeat 7px 5px;
+    background: @primary-color url('../images/search.png') no-repeat 7px 5px;
     z-index: 90;
 }
 
@@ -291,7 +287,7 @@ p {
 
 .banner h2 {
     font-size: 2.5em;
-    color: #ff6900;
+    color: @primary-color;
     margin-top: 0.3em;
     font-family: 'Oswald', sans-serif;
     font-weight: 900;
@@ -335,7 +331,7 @@ p {
 }
 
 .content-plan h6 a:hover {
-    color: #ff6900;
+    color: @primary-color;
 }
 
 .content-plan p {
@@ -350,7 +346,7 @@ p {
     font-size: 1.2em;
     position: absolute;
     bottom: 11%;
-    background-color: #ff6900;
+    background-color: @primary-color;
     color: #fff;
     padding: 0.2em 1em;
     left: 41%;
@@ -389,7 +385,7 @@ p {
 }
 
 .grid-mid label {
-    background: #ff6900;
+    background: @primary-color;
     width: 70px;
     height: 3px;
     display: block;
@@ -402,7 +398,7 @@ p {
 }
 
 .grid-mid h3 {
-    color: #ff6900;
+    color: @primary-color;
     font-size: 3em;
     font-family: 'Oswald', sans-serif;
     letter-spacing: 1px;
@@ -416,7 +412,7 @@ p {
 }
 
 .news-in h5 {
-    color: #ff6900;
+    color: @primary-color;
     font-size: 1.5em;
     font-family: 'Oswald', sans-serif;
     letter-spacing: 1px;
@@ -459,7 +455,7 @@ p {
     font-size: 1.3em;
     text-transform: uppercase;
     text-align: center;
-    border: 2px dotted #ff6900;
+    border: 2px dotted @primary-color;
     border-radius: 100px;
     -webkit-border-radius: 100px;
     -o-border-radius: 100px;
@@ -495,14 +491,14 @@ p {
 }
 
 .feature-top h3 {
-    color: #ff6900;
+    color: @primary-color;
     font-size: 3em;
     font-family: 'Oswald', sans-serif;
     letter-spacing: 1px;
 }
 
 .feature-top label {
-    background: #ff6900;
+    background: @primary-color;
     width: 70px;
     height: 3px;
     display: block;
@@ -528,12 +524,12 @@ p {
 }
 
 .feature h5 a:hover {
-    color: #ff6900;
+    color: @primary-color;
 }
 
 .fe-grid i {
     float: left;
-    color: #ff6900;
+    color: @primary-color;
     font-size: 1.2em;
     padding-top: 0.5em;
 }
@@ -553,7 +549,7 @@ p {
 
 a.read {
     font-size: 1.3em;
-    color: #ff6900;
+    color: @primary-color;
     margin-top: 1em;
     display: inline-block;
     text-decoration: underline;
@@ -642,7 +638,7 @@ span.glyphicon.glyphicon-map-marker {
 
 .address-grid h5 {
     font-size: 3em;
-    color: #ff6900;
+    color: @primary-color;
     letter-spacing: 1px;
     font-family: 'Oswald', sans-serif;
 }
@@ -659,7 +655,7 @@ span.glyphicon.glyphicon-map-marker {
 }
 
 .address-grid p a:hover {
-    color: #ff6900;
+    color: @primary-color;
 }
 
 .content-bottom {
@@ -676,7 +672,7 @@ span.glyphicon.glyphicon-map-marker {
 /*--footer--*/
 
 .footer {
-    background: #1F1F1F;
+    background: @footer-bg-color;
     padding: 4em 0;
     text-align: center;
 }
@@ -689,7 +685,7 @@ span.glyphicon.glyphicon-map-marker {
 }
 
 .footer-class a {
-    color: #ff6900;
+    color: @primary-color;
     text-decoration: none;
 }
 
@@ -796,7 +792,7 @@ span.glyphicon.glyphicon-map-marker {
 }
 
 .hi-icon-effect-9a .hi-icon:hover {
-    box-shadow: 0 0 0 4px #ff6900;
+    box-shadow: 0 0 0 4px @primary-color;
 }
 
 
@@ -809,7 +805,7 @@ span.glyphicon.glyphicon-map-marker {
 }
 
 .top-about label {
-    background: #ff6900;
+    background: @primary-color;
     width: 70px;
     height: 3px;
     display: block;
@@ -824,7 +820,7 @@ span.glyphicon.glyphicon-map-marker {
 }
 
 .top-about h1 {
-    color: #ff6900;
+    color: @primary-color;
     font-size: 3em;
     font-family: 'Oswald', sans-serif;
     letter-spacing: 1px;
@@ -869,7 +865,7 @@ span.glyphicon.glyphicon-map-marker {
 }
 
 .about-wel h5 a {
-    color: #ff6900;
+    color: @primary-color;
     text-decoration: none;
 }
 
@@ -889,12 +885,12 @@ span.glyphicon.glyphicon-map-marker {
 }
 
 .about-wel ul li a:hover {
-    color: #ff6900;
+    color: @primary-color;
 }
 
 .about-wel ul li a i {
     margin: 0 10px 0 0;
-    color: #ff6900;
+    color: @primary-color;
 }
 
 
@@ -929,14 +925,14 @@ span.glyphicon.glyphicon-map-marker {
 }
 
 .team-head h2 {
-    color: #ff6900;
+    color: @primary-color;
     font-size: 3em;
     font-family: 'Oswald', sans-serif;
     letter-spacing: 1px;
 }
 
 .team-head label {
-    background: #ff6900;
+    background: @primary-color;
     width: 70px;
     height: 3px;
     display: block;
@@ -965,7 +961,7 @@ span.glyphicon.glyphicon-map-marker {
 .member-team h4 {
     font-size: 1.5em;
     font-family: 'Oswald', sans-serif;
-    color: #ff6900;
+    color: @primary-color;
     margin: 1em 0 0;
 }
 
@@ -993,7 +989,7 @@ span.glyphicon.glyphicon-map-marker {
 }
 
 .contact-top label {
-    background: #ff6900;
+    background: @primary-color;
     width: 70px;
     height: 3px;
     display: block;
@@ -1008,7 +1004,7 @@ span.glyphicon.glyphicon-map-marker {
 }
 
 .contact-top h1 {
-    color: #ff6900;
+    color: @primary-color;
     font-size: 3em;
     font-family: 'Oswald', sans-serif;
     letter-spacing: 1px;
@@ -1047,7 +1043,7 @@ span.glyphicon.glyphicon-map-marker {
 .contact input[type="reset"] {
     border: none;
     outline: none;
-    background: #ff6900;
+    background: @primary-color;
     text-align: center;
     color: #fff;
     padding: 0.5em 1em;
@@ -1069,7 +1065,7 @@ span.glyphicon.glyphicon-map-marker {
 }
 
 .contact input[type="reset"]:hover {
-    background: #ff6900;
+    background: @primary-color;
 }
 
 .contact-top1 {
@@ -1091,7 +1087,7 @@ span.glyphicon.glyphicon-map-marker {
 }
 
 .services-mid label {
-    background: #ff6900;
+    background: @primary-color;
     width: 70px;
     height: 3px;
     display: block;
@@ -1106,7 +1102,7 @@ span.glyphicon.glyphicon-map-marker {
 }
 
 .services-mid h1 {
-    color: #ff6900;
+    color: @primary-color;
     font-size: 3em;
     font-family: 'Oswald', sans-serif;
     letter-spacing: 1px;
@@ -1128,7 +1124,7 @@ span.glyphicon.glyphicon-map-marker {
 }
 
 .ser-img h6 a {
-    color: #ff6900;
+    color: @primary-color;
     text-decoration: none;
 }
 
@@ -1163,7 +1159,7 @@ span.glyphicon.glyphicon-map-marker {
 }
 
 .ad-mid label {
-    background: #ff6900;
+    background: @primary-color;
     width: 70px;
     height: 3px;
     display: block;
@@ -1178,7 +1174,7 @@ span.glyphicon.glyphicon-map-marker {
 }
 
 .ad-mid h2 {
-    color: #ff6900;
+    color: @primary-color;
     font-size: 3em;
     font-family: 'Oswald', sans-serif;
     letter-spacing: 1px;
@@ -1195,7 +1191,7 @@ span.glyphicon.glyphicon-map-marker {
 
 .advan li i {
     margin-right: 0.5em;
-    color: #ff6900;
+    color: @primary-color;
 }
 
 ul.advan {
@@ -1242,7 +1238,7 @@ ul.advan {
 /*--services2--*/
 
 .services2-mid h5 {
-    color: #ff6900;
+    color: @primary-color;
     font-size: 2.5em;
     font-family: 'Oswald', sans-serif;
     letter-spacing: 1px;
@@ -1278,7 +1274,7 @@ ul.advan {
 }
 
 .short-top label {
-    background: #ff6900;
+    background: @primary-color;
     width: 70px;
     height: 3px;
     display: block;
@@ -1293,7 +1289,7 @@ ul.advan {
 }
 
 .short-top h3 {
-    color: #ff6900;
+    color: @primary-color;
     font-size: 3em;
     font-family: 'Oswald', sans-serif;
     letter-spacing: 1px;
@@ -1368,7 +1364,7 @@ ul.nav.nav-pills {
 }
 
 .gallery-top label {
-    background: #ff6900;
+    background: @primary-color;
     width: 70px;
     height: 3px;
     display: block;
@@ -1383,7 +1379,7 @@ ul.nav.nav-pills {
 }
 
 .gallery-top h1 {
-    color: #ff6900;
+    color: @primary-color;
     font-size: 3em;
     font-family: 'Oswald', sans-serif;
     letter-spacing: 1px;
@@ -1473,7 +1469,7 @@ ul.nav.nav-pills {
     font-family: 'Oswald', sans-serif;
     letter-spacing: 1px;
     line-height: 1.5em;
-    color: #ff6900;
+    color: @primary-color;
 }
 
 .blog_box h3 a {
@@ -1531,7 +1527,7 @@ ul.nav.nav-pills {
 
 .popular li a i {
     margin-right: 0.4em;
-    color: #ff6900;
+    color: @primary-color;
 }
 
 .popular li a:hover {
@@ -1557,7 +1553,7 @@ ul.nav.nav-pills {
 }
 
 .grid-product h5 a {
-    color: #ff6900;
+    color: @primary-color;
     text-decoration: none;
 }
 
@@ -1599,7 +1595,7 @@ ul.popular {
 
 .top-comment label,
 .top-com label {
-    background: #ff6900;
+    background: @primary-color;
     width: 70px;
     height: 3px;
     display: block;
@@ -1613,7 +1609,7 @@ ul.popular {
 
 .top-comment h1,
 .top-com h2 {
-    color: #ff6900;
+    color: @primary-color;
     font-size: 3em;
     font-family: 'Oswald', sans-serif;
     letter-spacing: 1px;
@@ -2081,7 +2077,7 @@ h4.media-heading {
         border: none;
     }
     .navbar-nav .open .dropdown-menu {
-        background-color: #ff6900;
+        background-color: @primary-color;
         text-align: center;
     }
     .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover,

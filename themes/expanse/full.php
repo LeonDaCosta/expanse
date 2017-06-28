@@ -1,30 +1,17 @@
 <!DOCTYPE html>
 <html lang="<?php echo Localization::activeLanguage()?>">
 <head>
- <?php Loader::element('header_required') ?> 
- <!--
-<title></title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="" />
--->
-<!-- <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" /> -->
-<?php echo $html->css($view->getStylesheet('css/bootstrap.css'))?>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<!-- Custom Theme files -->
-<!--theme-style-->
-<!-- <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	-->
-<?php echo $html->css($view->getStylesheet('css/style.css'))?>
-<!-- <link href="css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all"> -->
-<?php echo $html->css($view->getStylesheet('css/font-awesome.min.css'))?>
+<?php Loader::element('header_required') ?> 
+<link href="<?= $view->getThemePath() ?>/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="<?= $view->getThemePath() ?>/css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all">
 
-<!--//theme-style-->
+<link href="<?= $view->getStylesheet('style.less') ?>" rel="stylesheet" type="text/css" media="all" />
+
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-<!---->
-<!---->
+
 <link href='//fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
 <link href='//fonts.googleapis.com/css?family=Oswald:400,300,700' rel='stylesheet' type='text/css'>
-<!---->
+
 </head>
 <body>
 <div class="<?php echo $c->getPageWrapperClass()?>">

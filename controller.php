@@ -14,7 +14,7 @@ class Controller extends Package
 */
 	protected $pkgHandle = 'expanse';
 	protected $appVersionRequired = '5.7.1';
-	protected $pkgVersion = '0.0.1';
+	protected $pkgVersion = '0.0.2';
 	protected $pkgAllowsFullContentSwap = true;
 
 

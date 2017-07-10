@@ -3,6 +3,8 @@ namespace Concrete\Package\Expanse;
 
 use Package;
 use PageTheme;
+use BlockType;
+use BlockTypeSet;
 
 defined('C5_EXECUTE') or die(_("Access Denied."));
 
@@ -14,7 +16,9 @@ class Controller extends Package
 */
 	protected $pkgHandle = 'expanse';
 	protected $appVersionRequired = '5.7.1';
-	protected $pkgVersion = '0.1.0';
+
+	protected $pkgVersion = '0.1.2';
+
 	protected $pkgAllowsFullContentSwap = true;
 
 
@@ -52,10 +56,13 @@ class Controller extends Package
 	public function install()
 {
     $pkg = parent::install();
-		PageTheme::add('expanse', $pkg);
 
-    // Install Single Pages
-  //  $this->install_single_pages($pkg);
+		if(!BlockTypeSet::getByHandle('expanse')) {
+   		BlockTypeSet::add('expanse', 'Expanse', $pkg);
+		}
+
+		PageTheme::add('expanse', $pkg);
+		BlockType::installBlockType('expanse', $pkg);
 }
 
 /**

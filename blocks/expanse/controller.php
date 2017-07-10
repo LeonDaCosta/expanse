@@ -1,12 +1,11 @@
 <?php
-
-namespace Concrete\Package\Expanse\Blocks\ExpanseHeaders;
+namespace Concrete\Package\Expanse\Blocks\Expanse;
 
 use Concrete\Core\Block\BlockController;
 
 class Controller extends BlockController {
 
-  protected $btTable = 'btExpanseHeaders';
+  protected $btTable = 'btExpanse';
   protected $btInterfaceWidth = "520";
   protected $btInterfaceHeight = "780";
   protected $btWrapperClass = 'ccm-ui';
@@ -16,11 +15,11 @@ class Controller extends BlockController {
   protected $btCacheBlockOutputForRegisteredUsers = false;
   protected $btDefaultSet = 'multimedia';
 
-  public $header = "";
+  public $header = "Site Name";
 
   public function getBlockTypeName()
   {
-    return t("Expanse Header Builder");
+    return t("Expanse");
   }
 
   public function getBlockTypeDescription()
